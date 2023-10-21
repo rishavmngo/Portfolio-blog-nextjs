@@ -9,7 +9,13 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function Post({ params }) {
+export default async function Post({
+    params,
+}: {
+    params: {
+        slug: string;
+    };
+}) {
     const data = await getPost(params.slug);
     return (
         <main className="-mt-5 min-h-screen bg-white dark:bg-[#171717] w-full transition-colors ">
