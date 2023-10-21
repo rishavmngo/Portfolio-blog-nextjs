@@ -1,18 +1,18 @@
-.blogs h1 {
+h1.your-class-name {
     font-size: 1.8rem;
     line-height: 2.25rem;
     font-weight: bold;
     margin-bottom: 30px;
     margin-bottom: 2.5rem;
 }
-.blogs h2 {
+h2.your-class-name {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.3rem;
     margin-top: 2em;
     margin-bottom: 1em;
 }
-.blogs h3 {
+h3.your-class-name {
     font-size: 1.25em;
     font-weight: bold;
     margin-top: 1.6em;
@@ -20,57 +20,57 @@
     line-height: 1.6em;
     color: none;
 }
-.blogs p {
+p.your-class-name {
     font-size: 1rem;
     margin-bottom: 1.25rem;
     margin-top: 1.25rem;
 }
-.blogs ul {
+ul.your-class-name {
     margin-bottom: 0.86px;
     padding-left: 1.625rem;
 }
-.blogs hr {
+hr.your-class-name {
     margin: 20px 0px;
 }
-.blogs li {
+li.your-class-name {
     list-style-type: disc;
     margin: 0.5rem 0.3rem;
 }
 
-.blogs pre {
+pre.your-class-name {
     border: 1px solid gray;
     padding: 8px;
     border-radius: 7px;
     white-space: pre-wrap;
 }
-:is(.dark) * {
+:is(.dark) *.your-class-name {
     color: white;
 }
 
-.blogs a {
+a.your-class-name {
     text-decoration: underline;
     color: #06b6d4;
 }
 
-:is(.dark) a {
+:is(.dark) a.your-class-name {
     color: #06b6d4;
 }
 @media (min-width: 640px) {
-    .blogs h1 {
+    h1.your-class-name {
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: bold;
         margin-bottom: 30px;
         margin-bottom: 2.5rem;
     }
-    .blogs h2 {
+    h2.your-class-name {
         font-size: 1.5em;
         font-weight: 700;
         line-height: 1;
         margin-top: 2em;
         margin-bottom: 1em;
     }
-    .blogs h3 {
+    h3.your-class-name {
         font-size: 1.25em;
         font-weight: bold;
         margin-top: 1.6em;
@@ -78,26 +78,26 @@
         line-height: 1.6em;
         color: none;
     }
-    .blogs p {
+    p.your-class-name {
         font-size: 1.125rem;
         margin-bottom: 0.86rem;
     }
-    .blogs ul {
+    ul.your-class-name {
         margin-bottom: 0.86px;
         padding-left: 1.625rem;
     }
-    .blogs hr {
+    hr.your-class-name {
         margin: 20px 0px;
     }
-    .blogs li {
+    li.your-class-name {
         list-style-type: disc;
         margin: 0.5rem 0.3rem;
     }
-    .blogs img {
+    img.your-class-name {
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
-    .blogs pre {
+    pre.your-class-name {
         border: 1px solid gray;
         padding: 8px;
         border-radius: 7px;

@@ -5,16 +5,6 @@ import { remark } from "remark";
 import html from "remark-html";
 const postsDirectory = path.join(process.cwd(), "posts");
 
-// const posts = [
-//     {
-//         title: "This is a heading of my block",
-//         description:
-//             "Lorem impums is underrated i don’t understand why people hate it so much",
-//         tags: ["Go"],
-//         date: "2023-10-07",
-//     },
-// ];
-
 export function getPostData() {
     const fileNames = fs.readdirSync(postsDirectory);
 
@@ -45,10 +35,20 @@ export async function getPost(id: string) {
     const content = matter(fileContents);
     const processedContent = await remark().use(html).process(content.content);
     const contentHtml = processedContent.toString();
-
+    const modifiedHtml = contentHtml
+        .replace(/<p>/g, '<p class="your-class-name">')
+        .replace(/<h1>/g, '<h1 class="your-class-name">')
+        .replace(/<h2>/g, '<h2 class="your-class-name">')
+        .replace(/<h3>/g, '<h3 class="your-class-name">')
+        .replace(/<li>/g, '<li class="your-class-name">')
+        .replace(/<ul>/g, '<ul class="your-class-name">')
+        .replace(/<pre>/g, '<pre class="your-class-name">')
+        .replace(/<code>/g, '<code class="your-class-name">')
+        .replace(/<img/g, '<img class="your-class-name"')
+        .replace(/<a/g, '<a class="your-class-name"');
     return {
         id,
-        contentHtml,
+        contentHtml: modifiedHtml,
         ...content.data,
     };
 }
