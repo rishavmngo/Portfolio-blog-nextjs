@@ -1,0 +1,89 @@
+.blogs h1 {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-bottom: 2.5rem;
+}
+.blogs h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.blogs h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6em;
+    color: none;
+}
+.blogs p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+.blogs ul {
+    margin-bottom: 0.86px;
+    padding-left: 1.625rem;
+}
+.blogs hr {
+    margin: 20px 0px;
+}
+.blogs li {
+    list-style-type: disc;
+    margin: 0.5rem 0.3rem;
+}
+:is(.dark) * {
+    color: white;
+}
+
+.blogs a {
+    text-decoration: underline;
+    color: #06b6d4;
+}
+
+:is(.dark) a {
+    color: #06b6d4;
+}
+@media (min-width: 640px) {
+    .blogs h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-bottom: 2.5rem;
+    }
+    .blogs h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .blogs h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+        line-height: 1.6em;
+        color: none;
+    }
+    .blogs p {
+        font-size: 1.125rem;
+        margin-bottom: 0.86rem;
+    }
+    .blogs ul {
+        margin-bottom: 0.86px;
+        padding-left: 1.625rem;
+    }
+    .blogs hr {
+        margin: 20px 0px;
+    }
+    .blogs li {
+        list-style-type: disc;
+        margin: 0.5rem 0.3rem;
+    }
+}
