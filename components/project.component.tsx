@@ -44,7 +44,7 @@ export default function Project({
                         {tags.map((tag, index) => (
                             <li
                                 key={`tags-${index}`}
-                                className="p-1 px-4 text-white bg-[#E1B399] rounded-full"
+                                className="p-1 px-4 text-white bg-[#b87650] rounded-full"
                             >
                                 {tag}
                             </li>
