@@ -4,6 +4,7 @@ import todoPreview from "@/public/todo_preview.png";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 export const projects = [
     {
+        projectNumber: 1,
         title: "Dirf",
         description:
             "Dirf is simple command line utility to make multiple,nested, recursive directory and files inside them",
@@ -12,6 +13,7 @@ export const projects = [
     },
 
     {
+        projectNumber: 2,
         title: "Medsphere",
         description: "A webapp to manage medical organisation",
         tags: ["React js", "Express js", "Postgres"],
@@ -19,6 +21,7 @@ export const projects = [
     },
 
     {
+        projectNumber: 3,
         title: "Todo Rest Api",
         description: "A CRUD rest api for todo list",
         tags: ["golang", "Postgres"],

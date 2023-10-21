@@ -3,11 +3,11 @@ import React from "react";
 
 export default function About() {
     return (
-        <section className="w-full mb-24">
+        <section className="w-full mb-24 px-[20px]">
             <h4 className="text-[#363636] dark:text-white text-4xl flex-start mb-[40px]">
                 About <span className="text-[#B87650]">me</span>
             </h4>
-            <div className="flex gap-20">
+            <div className="flex gap-10 md:gap-20 max-[717px]:flex-col-reverse ">
                 <div className="flex-1 flex flex-col justify-between flex-wrap">
                     <p className="text-1xl text-[#656565] dark:text-[#cbcbcb] ">
                         Hello, My name is Rishav Raj. I built apps for web. I

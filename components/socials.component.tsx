@@ -10,7 +10,7 @@ export default function Socials() {
                         href={item.url}
                         target="_blank"
                         key={`socials-${index}`}
-                        className="border border-black bg-red flex items-center p-4 rounded  text-[#B87650] hover:text-gray-100 text-[1.25rem] hover:bg-[#B87650] hover:border-[#B87650] transition-colors active:bg-[#A1603C]"
+                        className="border border-black dark:border-white bg-red flex items-center p-4 rounded  text-[#B87650] hover:text-gray-100 text-[1.25rem] hover:bg-[#B87650] hover:border-[#B87650] transition-colors active:bg-[#A1603C]"
                     >
                         <item.icon />
                     </a>
