@@ -42,6 +42,7 @@ pre.your-class-name {
     padding: 8px;
     border-radius: 7px;
     white-space: pre-wrap;
+    overflow: hidden;
 }
 :is(.dark) *.your-class-name {
     color: white;
