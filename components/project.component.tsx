@@ -35,16 +35,16 @@ export default function Project({
                 </span>
                 {title}
             </h3>
-            <div className="flex flex-row justify-between sm:group-even:flex-row-reverse ">
+            <div className="flex gap-4 flex-row justify-between sm:group-even:flex-row-reverse ">
                 <div className="">
                     <p className="text-[#656565] dark:text-[#cbcbcb] mb-8">
                         {description}
                     </p>
-                    <ul className="flex gap-4">
+                    <ul className="flex sm:gap-4 gap-2 md:text-sm  sm:text-sm text-xs  md:flex-row flex-wrap">
                         {tags.map((tag, index) => (
                             <li
                                 key={`tags-${index}`}
-                                className="p-1 px-4 text-white bg-[#b87650] rounded-full"
+                                className="p-1 px-4 text-white bg-[#b87650] rounded-full whitescape-nowrap w-fit"
                             >
                                 {tag}
                             </li>
@@ -56,7 +56,7 @@ export default function Project({
                     height="300"
                     width="350"
                     alt={title}
-                    className=" hidden sm:block rounded-xl object-fit hover:opacity-90"
+                    className=" hidden sm:block  rounded-xl object-fit hover:opacity-90"
                 />
             </div>
         </motion.div>
