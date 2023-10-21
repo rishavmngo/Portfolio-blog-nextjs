@@ -9,25 +9,13 @@ date: "2023-10-07"
 
 # How to setup lsp in neovim
 
-In this tutorial we will learn how to setup lsp for **auto-completion** and understand role of each package.
-
-We will also setup **auto-formating**.
-
-Neovim support lsp, meaning it acts as a client for lsp.
-
-Neovim have inbuilt lsp support. But neovim does't have any opinion on how to use it. Neovim left this for users.
+In this tutorial we will learn how to setup lsp for **auto-completion** and understand role of each package. We will also setup **auto-formating**. Neovim support lsp, meaning it acts as a client for lsp. Neovim have inbuilt lsp support. But neovim does't have any opinion on how to use it. Neovim left this for users.
 
 ## Understanding what is all of this
 
 ![Big picture of lsp in neovim](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t329l5nct51k8xnlo52v.png)
 
-When you open a file in neovim a lsp client will attach to the buffer.
-
-The client which attach dependents on the filetype and configration in lsp.
-
-Then the client will start talk to the language server which is installed on your machine.
-
-The lsp respond with code completiation, error diagnostics and many more features.
+When you open a file in neovim a lsp client will attach to the buffer. The client which attach dependents on the filetype and configration in lsp. Then the client will start talk to the language server which is installed on your machine. The lsp respond with code completiation, error diagnostics and many more features.
 
 ## Lets start neovim and attach a lsp client to buffer
 
@@ -44,12 +32,12 @@ vim.lsp.start_client({
 
 ```
 
-Parameters:
+**Parameters:**
 
--   `name` is server name given by user, must be unique
--   `cmd` to start the language server on your machine
--   `root_dir` check for pattern
--   `upward = true` is to start searching from upward to downward
+-   **name** is server name given by user, must be unique
+-   **cmd** to start the language server on your machine
+-   **root_dir** check for pattern
+-   **upward = true** is to start searching from upward to downward
 
 Place **setup.py**(or any type of file which is mentioned in root_dir) beside init.lua, then lsp client will recognize the pattern and attached to the buffer (init.lua in this case).
 

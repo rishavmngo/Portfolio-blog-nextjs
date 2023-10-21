@@ -36,6 +36,13 @@
     list-style-type: disc;
     margin: 0.5rem 0.3rem;
 }
+
+.blogs pre {
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 7px;
+    white-space: pre-wrap;
+}
 :is(.dark) * {
     color: white;
 }
@@ -85,5 +92,16 @@
     .blogs li {
         list-style-type: disc;
         margin: 0.5rem 0.3rem;
+    }
+    .blogs img {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .blogs pre {
+        border: 1px solid gray;
+        padding: 8px;
+        border-radius: 7px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
