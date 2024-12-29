@@ -34,10 +34,10 @@ vim.lsp.start_client({
 
 **Parameters:**
 
--   **name** is server name given by user, must be unique
--   **cmd** to start the language server on your machine
--   **root_dir** check for pattern
--   **upward = true** is to start searching from upward to downward
+- **name** is server name given by user, must be unique
+- **cmd** to start the language server on your machine
+- **root_dir** check for pattern
+- **upward = true** is to start searching from upward to downward
 
 Place **setup.py**(or any type of file which is mentioned in root_dir) beside init.lua, then lsp client will recognize the pattern and attached to the buffer (init.lua in this case).
 
@@ -210,10 +210,10 @@ require("lazy").setup({
 
 What is mean by **sources** here
 
--   Nvim_cmp gets the completions from many sources like
--   `cmp-nvim-lsp` gets data from language server
--   `luasnip` gets data from snippets and expand snippets for nvim_cmp
--   `buffers` gets data from buffer in neovim
+- Nvim_cmp gets the completions from many sources like
+- `cmp-nvim-lsp` gets data from language server
+- `luasnip` gets data from snippets and expand snippets for nvim_cmp
+- `buffers` gets data from buffer in neovim
 
 Here we extend the capabilities of lsp with capabilities of cmp to leverage features of cmp.
 
@@ -405,5 +405,5 @@ That's it.
 
 References:
 
--   [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
--   [Neovim docs for lsp](https://neovim.io/doc/user/lsp.html)
+- [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
+- [Neovim docs for lsp](https://neovim.io/doc/user/lsp.html)
